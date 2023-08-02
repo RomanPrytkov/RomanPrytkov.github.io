@@ -10,6 +10,40 @@
  function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
 </script>
 
+<script>
+    function updateRequirements() {
+        var requestedId = document.getElementById('00N5200000UdKDO').value;
+        if (requestedId != null && requestedId.includes('Ringgold ID')) {
+            document.getElementById('00N5200000UdOCV').required = true;
+            document.getElementById('00N5200000UdOfw').required = true;
+            document.getElementById('00N5200000UdOjj').required = true;
+
+        } else {
+            document.getElementById('00N5200000UdOCV').required = false;
+            document.getElementById('00N5200000UdOfw').required = false;
+            document.getElementById('00N5200000UdOjj').required = false;
+        }
+    }
+
+    function updateRequirements2() {
+        var requestedId = document.getElementById('00N5200000Ug1QN').value;
+        if (requestedId != null && requestedId.includes('Other Reason (Specify)')) {
+            document.getElementById('00N5200000Ug1QS').required = true;
+        } else {
+            document.getElementById('00N5200000Ug1QS').required = false;
+        }
+    }
+
+    function updateRequirements3() {
+        var requestedId = document.getElementById('00N5200000UdOfw').value;
+        if (requestedId != null && requestedId.includes('Other system')) {
+            document.getElementById('00N5200000Ug4Wh').required = true;
+        } else {
+            document.getElementById('00N5200000Ug4Wh').required = false;
+        }
+    }
+</script>
+
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
@@ -42,7 +76,7 @@
 
         <tr>
             <td>I need a (choose one or both):</td>
-            <td><select id="00N5200000UdKDO" name="00N5200000UdKDO" multiple="multiple" title="What type of ID is being requested?" style="height: 3em" required>
+            <td><select id="00N5200000UdKDO" name="00N5200000UdKDO" multiple="multiple" title="What type of ID is being requested?" style="height: 3em" required onchange="updateRequirements();">
                 <option value="Ringgold ID">Ringgold ID</option>
                 <option value="International Standard Name Identifier (ISNI)">International Standard Name Identifier (ISNI)</option>
             </select>
@@ -345,13 +379,38 @@
 
         <tr>
             <td>Which System Are You Using?:</td>
-            <td><select id="00N5200000UdOfw" name="00N5200000UdOfw">
-                    <option value="">--None--</option>
-                    <option value="ScholarOne/Clarivate">ScholarOne/Clarivate</option>
-                    <option value="ORCID">ORCID</option>
+            <td><select id="00N5200000UdOfw" name="00N5200000UdOfw" onchange="updateRequirements3();">
                     <option value="Aries">Aries</option>
-                    <option value="Other">Other</option>
+                    <option value="Benchpress">Benchpress</option>
+                    <option value="eJournalPress">eJournalPress</option>
+                    <option value="ScholarOne">ScholarOne</option>
+                    <option value="Scholastica">Scholastica</option>
+                    <option value="Not Applicable">Not Applicable</option>
+                    <option value="Other system">Other system (which if selected will present a free text box)</option>
                 </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Other system:</td>
+            <td><textarea  id="00N5200000Ug4Wh" name="00N5200000Ug4Wh" type="text" wrap="soft"></textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Why do you need a Ringgold ID or an ISNI ID?:</td>
+            <td><select id="00N5200000Ug1QN" name="00N5200000Ug1QN" required onchange="updateRequirements2();">
+                <option value="I am submitting an article to a journal">I am submitting an article to a journal</option>
+                <option value="I am helping an author submit a paper">I am helping an author submit a paper</option>
+                <option value="I am a Ringgold client and I want an ID added">I am a Ringgold client and I want an ID added</option>
+                <option value="Other Reason (Specify)">Other Reason (Specify) (which if selected will present a free text box)</option>
+            </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Why I need an ID:</td>
+            <td><textarea  id="00N5200000Ug1QS" name="00N5200000Ug1QS" type="text" wrap="soft"></textarea>
             </td>
         </tr>
 
