@@ -1,0 +1,35 @@
+<html>
+
+<script type='text/javascript'>
+    function initEmbeddedMessaging() {
+        try {
+            embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+            embeddedservice_bootstrap.init(
+                '00D52000000JQzr',
+                'Licensee_Chat',
+                'https://copyright-clearance--cccpartial.sandbox.my.site.com/ESWLicenseeChat1720615095278',
+                {
+                    scrt2URL: 'https://copyright-clearance--cccpartial.sandbox.my.salesforce-scrt.com'
+                }
+            );
+        } catch (err) {
+            console.error('Error loading Embedded Messaging: ', err);
+        }
+    };
+</script>
+
+<script onload='initEmbeddedMessaging()'
+        src='https://copyright-clearance--cccpartial.sandbox.my.site.com/ESWLicenseeChat1720615095278/assets/js/bootstrap.min.js'
+        type='text/javascript'>
+</script>
+
+<body>
+
+<textarea cols="60" name="text" rows="3">
+        'Licensee Support' page - placeholder...
+</textarea>
+
+</body>
+
+</html>
