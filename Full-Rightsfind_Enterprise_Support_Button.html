@@ -1,0 +1,52 @@
+<html>
+<textarea name="text" cols="60" rows="3">
+        'Rightsfind Enterprise Support' page - placeholder...
+    </textarea>
+
+<img id="liveagent_button_online_5730c0000004aP0"
+     onclick="liveagent.startChat('5730c0000004aP0')"
+     src="https://copyright-clearance--full.sandbox.my.salesforce-sites.com/resource/1554980892000/CCCOnLineChat"
+     style="display: none; border: 0px none; cursor: pointer"
+/>
+
+<img id="liveagent_button_offline_5730c0000004aP0"
+     onclick="onOfflineClicked()"
+     src="https://copyright-clearance--full.sandbox.my.salesforce-sites.com/resource/1554980892000/CCCOffLineChatV3"
+     style="display: none; border: 0px none;"
+/>
+
+<script type="text/javascript">
+    if (!window._laq) {
+        window._laq = [];
+    }
+    window._laq.push(function () {
+        liveagent.showWhenOnline('5730c0000004aP0', document.getElementById('liveagent_button_online_5730c0000004aP0'));
+        liveagent.showWhenOffline('5730c0000004aP0', document.getElementById('liveagent_button_offline_5730c0000004aP0'));
+    });
+</script>
+
+<script type='text/javascript' src='https://c.la2s-core1.sfdc-lywfpd.salesforceliveagent.com/content/g/js/61.0/deployment.js'>
+
+</script>
+
+<script type='text/javascript'>
+    liveagent.setChatWindowHeight(490);
+    liveagent.setChatWindowWidth(285);
+
+    liveagent.init('https://d.la2s-core1.sfdc-lywfpd.salesforceliveagent.com/chat', '5720c0000004aDJ', '00DVA000001anT3');
+</script>
+
+<script type='text/javascript'>
+    liveagent.addCustomDetail('buttonType', 'Rightsfind').saveToTranscript('Button_Type__c');
+    liveagent.addCustomDetail('ReferringURL', window.location.href).saveToTranscript('Referring_URL__c');
+    liveagent.addCustomDetail('firstName', 'Joe');
+    liveagent.addCustomDetail('lastName', 'Carpenter');
+    liveagent.addCustomDetail('email', 'Joe.Carpenter@gmail.com');
+</script>
+
+<script type="text/javascript">
+    function onOfflineClicked() {
+        window.location.href = 'mailto:customerservice@copyright.com';
+    }
+</script>
+</html>

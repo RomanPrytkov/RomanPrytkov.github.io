@@ -1,0 +1,51 @@
+<html>
+
+<textarea cols="60" name="text" rows="3">
+        'New Transactional Support' page - placeholder...
+    </textarea>
+
+<img id="liveagent_button_online_5730c0000004aOv"
+     onclick="liveagent.startChat('5730c0000004aOv')"
+     src="https://copyright-clearance--full.sandbox.my.salesforce-sites.com/resource/1554980892000/CCCOnLineChat"
+     style="display: none; border: 0px none; cursor: pointer"/>
+
+<img id="liveagent_button_offline_5730c0000004aOv"
+     onclick="onOfflineClicked()"
+     src="https://copyright-clearance--full.sandbox.my.salesforce-sites.com/resource/1554980892000/CCCOffLineChatV3"
+     style="display: none; border: 0px none; "/>
+
+<script type="text/javascript">
+    if (!window._laq) {
+        window._laq = [];
+    }
+    window._laq.push(function () {
+        liveagent.showWhenOnline('5730c0000004aOv', document.getElementById('liveagent_button_online_5730c0000004aOv'));
+        liveagent.showWhenOffline('5730c0000004aOv', document.getElementById('liveagent_button_offline_5730c0000004aOv'));
+    });
+</script>
+
+<script src='https://c.la2s-core1.sfdc-lywfpd.salesforceliveagent.com/content/g/js/61.0/deployment.js'
+        type='text/javascript'></script>
+
+<script type='text/javascript'>
+    liveagent.setChatWindowHeight(490);
+    liveagent.setChatWindowWidth(285);
+
+    liveagent.init('https://d.la2s-core1.sfdc-lywfpd.salesforceliveagent.com/chat', '5720c0000004aDI', '00DVA000001anT3');
+</script>
+
+<script type='text/javascript'>
+    liveagent.addCustomDetail('buttonType', 'New Transactional').saveToTranscript('Button_Type__c');
+    liveagent.addCustomDetail('ReferringURL', window.location.href).saveToTranscript('Referring_URL__c');
+    liveagent.addCustomDetail('firstName', 'Joe');
+    liveagent.addCustomDetail('lastName', 'Carpenter');
+    liveagent.addCustomDetail('email', 'Joe.Carpenter@gmail.com');
+</script>
+
+<script type="text/javascript">
+    function onOfflineClicked() {
+        window.location.href = 'mailto:customercare@copyright.com';
+    }
+</script>
+
+</html>
