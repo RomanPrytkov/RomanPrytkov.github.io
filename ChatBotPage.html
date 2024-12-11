@@ -1,0 +1,114 @@
+<html lang="en-US">
+<body>
+Hello world
+</body>
+<style type='text/css'>
+    .embeddedServiceLiveAgentStateChatAvatar .avatar {
+        padding: 3px;
+    }
+
+    .embeddedServiceSidebarButton.uiButton--inverse .label {
+        color: #00326E;
+    }
+
+    .embeddedServiceHelpButton .helpButton .uiButton {
+        background-color: #00326E;
+        font-family: "Verdana", sans-serif;
+    }
+
+    .embeddedServiceHelpButton .helpButton .uiButton:focus {
+        outline: 1px solid #00326E;
+    }
+
+    .embeddedServiceLiveAgentStateWaiting .loadingBall {
+        background-color: #CC590A;
+    }
+
+    .embeddedServiceLiveAgentStateChatMenuMessage .rich-menu-item {
+        background-color: #00326E;
+        color: #FFFFFF;
+    }
+
+    .embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item:hover, .embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item:active, .embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item:hover:active, .embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item:focus, .embeddedServiceLiveAgentStateChatMenuMessage .chatContent .rich-menu-item:focus:hover {
+        color: #ffffff;
+        background-color: #CC590A;
+    }
+
+    .embeddedServiceSidebarDialogState #dialogTextBody {
+        font-family: 'Calibri', sans-serif;
+    }
+
+    .embeddedServiceLiveAgentStateWaiting .waitingGreeting, .embeddedServiceLiveAgentStateWaiting .waitingMessage {
+        font-family: 'Calibri', sans-serif;
+    }
+
+    .waitingGreeting {
+        display: none;
+    }
+</style>
+
+<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+<script type='text/javascript'>
+    var initESW = function (gslbBaseURL) {
+        embedded_svc.settings.displayHelpButton = true;
+        embedded_svc.settings.language = '';
+        embedded_svc.settings.extraPrechatFormDetails =
+            [
+                {
+                    "label": "Referring URL",
+                    "value": window.location.href,
+                    "transcriptFields": ["Referring_URL__c"],
+                    "displayToAgent": true
+                },
+                {
+                    "label": "First Name",
+                    "value": "Mikita",
+                    "transcriptFields": ["First_Name__c"],
+                    "displayToAgent": true
+                },
+                {
+                    "label": "Last Name",
+                    "value": "Hrutsa",
+                    "transcriptFields": ["Last_Name__c"],
+                    "displayToAgent": true
+                },
+                {
+                    "label": "Email",
+                    "value": "mhrutsa@copyright.com",
+                    "transcriptFields": ["Email__c"],
+                    "displayToAgent": true
+                }
+            ];
+
+        embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+        embedded_svc.settings.entryFeature = 'LiveAgent';
+        embedded_svc.init(
+            'https://copyright-clearance--full.sandbox.my.salesforce.com',
+            'https://copyright-clearance--full.sandbox.my.salesforce-sites.com/kb',
+            gslbBaseURL,
+            '00DVA000001anT3',
+            'RLSC_embedded_chat',
+            {
+                baseLiveAgentContentURL: 'https://c.la12s-core1.sfdc-lywfpd.salesforceliveagent.com/content',
+                deploymentId: '572Rm000000adfZ',
+                buttonId: '573Rm00000029bt',
+                baseLiveAgentURL: 'https://d.la12s-core1.sfdc-lywfpd.salesforceliveagent.com/chat',
+                eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IRm0000006ZCnMAM_190c1e4e8c4',
+                isOfflineSupportEnabled: false
+            }
+        );
+    };
+
+    if (!window.embedded_svc) {
+        var s = document.createElement('script');
+        s.setAttribute('src', 'https://copyright-clearance--full.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+        s.onload = function () {
+            initESW(null);
+        };
+        document.body.appendChild(s);
+    } else {
+        initESW('https://service.force.com');
+    }
+</script>
+
+</html>
