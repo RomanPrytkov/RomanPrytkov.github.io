@@ -79,11 +79,10 @@
     <!--  ----------------------------------------------------------------------  -->
     <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
     <!--  these lines if you wish to test in debug mode.                          -->
-    <!-- <input type="hidden" name="debug" value=1>                              -->
-    <!-- <input type="hidden" name="debugEmail"                                  -->
-    <!-- value="rprytkov@copyright.com">                                         -->
+    <!--  <input type="hidden" name="debug" value=1>                              -->
+    <!--  <input type="hidden" name="debugEmail"                                  -->
+    <!--  value="rprytkov@copyright.com">                                         -->
     <!--  ----------------------------------------------------------------------  -->
-
 
     <table>
 
@@ -102,8 +101,13 @@
         </tr>
 
         <tr>
-            <td>Your Full Name:</td>
-            <td><input id="00N4Q00000AzqtT" maxlength="100" name="00N4Q00000AzqtT" size="20" type="text" title="Requester name" required/></td>
+            <td>First Name:</td>
+            <td><input id="00N4Q00000Azr9s" maxlength="100" name="00N4Q00000Azr9s" size="20" type="text" title="Requester first name" required/></td>
+        </tr>
+
+        <tr>
+            <td>Last Name:</td>
+            <td><input id="00N4Q00000Azr9t" maxlength="100" name="00N4Q00000Azr9t" size="20" type="text" title="Requester last name" required/></td>
         </tr>
 
         <tr>
@@ -376,8 +380,23 @@
         </tr>
 
         <tr>
+            <td>Organization City:</td>
+            <td><input id="00N4Q00000AzsTe" maxlength="50" name="00N4Q00000AzsTe" size="20" type="text" required/></td>
+        </tr>
+
+        <tr>
             <td>Organization Post Code:</td>
             <td><input id="00N4Q00000AzqtL" maxlength="50" name="00N4Q00000AzqtL" size="20" type="text"/></td>
+        </tr>
+
+        <tr>
+            <td>For-Profit or Non-Profit?:</td>
+            <td><select id="00NVA000003mlNt" name="00NVA000003mlNt" required>
+                <option value="">--None--</option>
+                <option value="For Profit">For Profit</option>
+                <option value="Non-Profit">Non-Profit</option>
+            </select>
+            </td>
         </tr>
 
         <tr>
