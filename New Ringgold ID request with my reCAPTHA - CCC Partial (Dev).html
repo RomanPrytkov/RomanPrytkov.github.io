@@ -16,12 +16,11 @@
         if (requestedId != null && requestedId.includes('Ringgold ID')) {
             document.getElementById('00N4Q00000AzqtH').required = true;
             document.getElementById('00N4Q00000AzqtP').required = true;
-            document.getElementById('00N4Q00000AzqtG').required = true;
-
+            document.getElementById('00N4Q00000AzqtR').required = true;
         } else {
             document.getElementById('00N4Q00000AzqtH').required = false;
             document.getElementById('00N4Q00000AzqtP').required = false;
-            document.getElementById('00N4Q00000AzqtG').required = false;
+            document.getElementById('00N4Q00000AzqtR').required = false;
         }
     }
 
@@ -70,7 +69,7 @@
     <input type=hidden name="orgid" value="00DE100000F0xfP">
     <input type=hidden name="retURL" value="https://www.copyright.com/solutions-ringgold/">
 
-    <input type=hidden name="recordType" id="recordType" value="0124Q000001hjDeQAI">
+    <input type=hidden name="recordType" id="recordType" value="0124Q000001hjDe">
     <input type=hidden name="subject" id="subject" value="ID Request Webform">
     <input type=hidden name="description" id="description" value="A new request has been submitted.">
     <input type=hidden name="00N4Q00000AucPk" id="00N4Q00000AucPk" value="Web">
@@ -402,7 +401,7 @@
 
         <tr>
             <td>Organization Official Website URL:</td>
-            <td><input id="00N4Q00000AzqtK" maxlength="50" name="00N4Q00000AzqtK" size="20" type="text" required/></td>
+            <td><input id="00N4Q00000AzqtK" maxlength="50" name="00N4Q00000AzqtK" size="20" type="url" required/></td>
         </tr>
 
         <tr>
@@ -411,7 +410,7 @@
         </tr>
 
         <tr>
-            <td>Which System Are You Using?:</td>
+            <td>What System Are You Using?:</td>
             <td><select id="00N4Q00000AzqtP" name="00N4Q00000AzqtP" onchange="updateRequirements3();">
                     <option value="Aries">Aries</option>
                     <option value="Benchpress">Benchpress</option>
