@@ -12,40 +12,40 @@
 
 <script>
     function updateRequirements() {
-        var requestedId = document.getElementById('00N5200000UdKDO').value;
+        var requestedId = document.getElementById('00N4Q00000AzqtO').value;
         if (requestedId != null && requestedId.includes('Ringgold ID')) {
-            document.getElementById('00N5200000UdOCV').required = true;
-            document.getElementById('00N5200000UdOfw').required = true;
-            document.getElementById('00N5200000UdOjj').required = true;
+            document.getElementById('00N4Q00000AzqtH').required = true;
+            document.getElementById('00N4Q00000AzqtP').required = true;
+            document.getElementById('00N4Q00000AzqtG').required = true;
 
         } else {
-            document.getElementById('00N5200000UdOCV').required = false;
-            document.getElementById('00N5200000UdOfw').required = false;
-            document.getElementById('00N5200000UdOjj').required = false;
+            document.getElementById('00N4Q00000AzqtH').required = false;
+            document.getElementById('00N4Q00000AzqtP').required = false;
+            document.getElementById('00N4Q00000AzqtG').required = false;
         }
     }
 
-    document.getElementById('00N5200000Ug1QS').style.visibility = "hidden";
+    document.getElementById('00N4Q00000AzqtQ').style.visibility = "hidden";
     function updateRequirements2() {
-        var requestedId = document.getElementById('00N5200000Ug1QN').value;
+        var requestedId = document.getElementById('00N4Q00000AzqtR').value;
         if (requestedId != null && requestedId.includes('Other Reason (Specify)')) {
-            document.getElementById('00N5200000Ug1QS').required = true;
-            document.getElementById('00N5200000Ug1QS').style.visibility = "visible";
+            document.getElementById('00N4Q00000AzqtQ').required = true;
+            document.getElementById('00N4Q00000AzqtQ').style.visibility = "visible";
         } else {
-            document.getElementById('00N5200000Ug1QS').required = false;
-            document.getElementById('00N5200000Ug1QS').style.visibility = "hidden";
+            document.getElementById('00N4Q00000AzqtQ').required = false;
+            document.getElementById('00N4Q00000AzqtQ').style.visibility = "hidden";
         }
     }
 
-    document.getElementById('00N5200000Ug4Wh').style.visibility = "hidden";
+    document.getElementById('00N4Q00000AzqtN').style.visibility = "hidden";
     function updateRequirements3() {
-        var requestedId = document.getElementById('00N5200000UdOfw').value;
+        var requestedId = document.getElementById('00N4Q00000AzqtP').value;
         if (requestedId != null && requestedId.includes('Other system')) {
-            document.getElementById('00N5200000Ug4Wh').required = true;
-            document.getElementById('00N5200000Ug4Wh').style.visibility = "visible";
+            document.getElementById('00N4Q00000AzqtN').required = true;
+            document.getElementById('00N4Q00000AzqtN').style.visibility = "visible";
         } else {
-            document.getElementById('00N5200000Ug4Wh').required = false;
-            document.getElementById('00N5200000Ug4Wh').style.visibility = "hidden";
+            document.getElementById('00N4Q00000AzqtN').required = false;
+            document.getElementById('00N4Q00000AzqtN').style.visibility = "hidden";
         }
     }
 
@@ -66,11 +66,11 @@
 
 <form action="https://copyright-clearance--cccpartial.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-    <input type=hidden name='captcha_settings' value='{"keyname":"Google_reCAPTCHA_v2","fallback":"true","orgId":"00D52000000JQzr","ts":""}'>
-    <input type=hidden name="orgid" value="00D52000000JQzr">
+    <input type=hidden name='captcha_settings' value='{"keyname":"Google_reCAPTCHA_v2","fallback":"true","orgId":"00DE100000F0xfP","ts":""}'>
+    <input type=hidden name="orgid" value="00DE100000F0xfP">
     <input type=hidden name="retURL" value="https://www.copyright.com/solutions-ringgold/">
 
-    <input type=hidden name="recordType" id="recordType" value="01252000003bY32">
+    <input type=hidden name="recordType" id="recordType" value="0124Q000001hjDeQAI">
     <input type=hidden name="subject" id="subject" value="ID Request Webform">
     <input type=hidden name="description" id="description" value="A new request has been submitted.">
     <input type=hidden name="00N4Q00000AucPk" id="00N4Q00000AucPk" value="Web">
@@ -89,7 +89,7 @@
 
         <tr>
             <td>I need a (choose one or both):</td>
-            <td><select id="00N5200000UdKDO" name="00N5200000UdKDO" multiple="multiple" title="What type of ID is being requested?" style="height: 3em" required onchange="updateRequirements();">
+            <td><select id="00N4Q00000AzqtO" name="00N4Q00000AzqtO" multiple="multiple" title="What type of ID is being requested?" style="height: 3em" required onchange="updateRequirements();">
                 <option value="Ringgold ID">Ringgold ID</option>
                 <option value="International Standard Name Identifier (ISNI)">International Standard Name Identifier (ISNI)</option>
             </select>
@@ -103,23 +103,23 @@
 
         <tr>
             <td>First Name:</td>
-            <td><input id="00N5200000XeDBj" maxlength="100" name="00N5200000XeDBj" size="20" type="text" title="Requester first name" required/></td>
+            <td><input id="00N4Q00000Azr9s" maxlength="100" name="00N4Q00000Azr9s" size="20" type="text" title="Requester first name" required/></td>
         </tr>
 
         <tr>
             <td>Last Name:</td>
-            <td><input id="00N5200000XeDBy" maxlength="100" name="00N5200000XeDBy" size="20" type="text" title="Requester last name" required/></td>
+            <td><input id="00N4Q00000Azr9t" maxlength="100" name="00N4Q00000Azr9t" size="20" type="text" title="Requester last name" required/></td>
         </tr>
 
         <tr>
             <td>Organization Legal Name:</td>
-            <td><input id="00N5200000UdLU5" maxlength="100" name="00N5200000UdLU5" size="20" type="text" required/></td>
+            <td><input id="00N4Q00000AzqtJ" maxlength="100" name="00N4Q00000AzqtJ" size="20" type="text" required/></td>
         </tr>
 
         <tr>
             <td>Organization country location:</td>
             <td>
-                <select id="00N5200000UdLUA" name="00N5200000UdLUA" required>
+                <select id="00N4Q00000AzqtI" name="00N4Q00000AzqtI" required>
                     <option value="">--None--</option>
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Aland Islands">Aland Islands</option>
@@ -377,22 +377,22 @@
 
         <tr>
             <td>Organization Postal Address:</td>
-            <td><input id="00N5200000UdNEs" maxlength="50" name="00N5200000UdNEs" size="20" type="text" required/></td>
+            <td><input id="00N4Q00000AzqtM" maxlength="50" name="00N4Q00000AzqtM" size="20" type="text" required/></td>
         </tr>
 
         <tr>
             <td>Organization City:</td>
-            <td><input id="00N5200000c4FtB" maxlength="50" name="00N5200000c4FtB" size="20" type="text" required/></td>
+            <td><input id="00N4Q00000AzsTe" maxlength="50" name="00N4Q00000AzsTe" size="20" type="text" required/></td>
         </tr>
 
         <tr>
             <td>Organization Post Code:</td>
-            <td><input id="00N5200000UdO0d" maxlength="50" name="00N5200000UdO0d" size="20" type="text"/></td>
+            <td><input id="00N4Q00000AzqtL" maxlength="50" name="00N4Q00000AzqtL" size="20" type="text"/></td>
         </tr>
 
         <tr>
             <td>For-Profit or Non-Profit?:</td>
-            <td><select id="00NWr000001Nfmf" name="00NWr000001Nfmf" required>
+            <td><select id="00NRm00000BWDWr" name="00NRm00000BWDWr" required>
                 <option value="">--None--</option>
                 <option value="For Profit">For Profit</option>
                 <option value="Non-Profit">Non-Profit</option>
@@ -402,17 +402,17 @@
 
         <tr>
             <td>Organization Official Website URL:</td>
-            <td><input id="00N5200000UdO2y" maxlength="50" name="00N5200000UdO2y" size="20" type="text" required/></td>
+            <td><input id="00N4Q00000AzqtK" maxlength="50" name="00N4Q00000AzqtK" size="20" type="text" required/></td>
         </tr>
 
         <tr>
             <td>Name of Publisher and /or Journal where you will use Ringgold ID:</td>
-            <td><input id="00N5200000UdOCV" maxlength="100" name="00N5200000UdOCV" size="20" type="text"/></td>
+            <td><input id="00N4Q00000AzqtH" maxlength="100" name="00N4Q00000AzqtH" size="20" type="text"/></td>
         </tr>
 
         <tr>
             <td>Which System Are You Using?:</td>
-            <td><select id="00N5200000UdOfw" name="00N5200000UdOfw" onchange="updateRequirements3();">
+            <td><select id="00N4Q00000AzqtP" name="00N4Q00000AzqtP" onchange="updateRequirements3();">
                     <option value="Aries">Aries</option>
                     <option value="Benchpress">Benchpress</option>
                     <option value="eJournalPress">eJournalPress</option>
@@ -427,13 +427,13 @@
 
         <tr>
             <td>Other system:</td>
-            <td><textarea  id="00N5200000Ug4Wh" name="00N5200000Ug4Wh" type="text" wrap="soft" style="visibility: hidden"></textarea>
+            <td><textarea  id="00N4Q00000AzqtN" name="00N4Q00000AzqtN" type="text" wrap="soft" style="visibility: hidden"></textarea>
             </td>
         </tr>
 
         <tr>
             <td>Why do you need a Ringgold ID or an ISNI ID?:</td>
-            <td><select id="00N5200000Ug1QN" name="00N5200000Ug1QN" required onchange="updateRequirements2();">
+            <td><select id="00N4Q00000AzqtR" name="00N4Q00000AzqtR" required onchange="updateRequirements2();">
                 <option value="I am submitting an article to a journal">I am submitting an article to a journal</option>
                 <option value="I am helping an author submit a paper">I am helping an author submit a paper</option>
                 <option value="I am a Ringgold client and I want an ID added">I am a Ringgold client and I want an ID added</option>
@@ -444,13 +444,13 @@
 
         <tr>
             <td>Why I need an ID:</td>
-            <td><textarea  id="00N5200000Ug1QS" name="00N5200000Ug1QS" type="text" wrap="soft" style="visibility: hidden"></textarea>
+            <td><textarea  id="00N4Q00000AzqtQ" name="00N4Q00000AzqtQ" type="text" wrap="soft" style="visibility: hidden"></textarea>
             </td>
         </tr>
 
         <tr>
             <td>Confirmation:</td>
-            <td><input  id="00N5200000UdOjj" name="00N5200000UdOjj" type="checkbox" value="1"/></td>
+            <td><input  id="00N4Q00000AzqtG" name="00N4Q00000AzqtG" type="checkbox" value="1"/></td>
             <td>
                 I have already checked that there is not an existing record for my organization in the Identify Database by
                 using the free lookup service at https://ido.ringgold.com/register or the free ISNI (Number or organization)
