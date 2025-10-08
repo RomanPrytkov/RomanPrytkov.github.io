@@ -97,7 +97,7 @@
 
     <tr>
       <td>Your Email Address:</td>
-      <td><input id="email" maxlength="80" name="email" size="20" type="email" title="Requester email address" required/></td>
+      <td><input id="email" maxlength="80" name="email" size="20" type="email" title="Requester email address" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required/></td>
     </tr>
 
     <tr>
@@ -464,4 +464,5 @@
   <input type="submit" name="submit">
 
 </form>
+
 
