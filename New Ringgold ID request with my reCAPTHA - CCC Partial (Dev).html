@@ -462,17 +462,17 @@
          data-expired-callback="onRecaptchaExpired">
     </div>
 
-    <input type="submit" name="submit" id="submit-btn" value="Submit Ticket">
+    <input type="submit" name="submit" id="submit-btn" value="Submit">
 
     <script>
     // Intercept the form submission using the specific form ID
         document.getElementById("salesforce-case-form").addEventListener("submit", function(e) {
             var submitBtn = document.getElementById("submit-btn");
 
-        // 1. Check if the organization confirmation checkbox is checked
+        // 1. Check if the confirmation checkbox is checked
         var confirmationCheckbox = document.getElementById("00N4Q00000AzqtG");
         if (confirmationCheckbox && !confirmationCheckbox.checked) {
-            alert("Please confirm that you have checked the Identify Database / ISNI lookup service before submitting.");
+            alert("Please confirm before submitting.");
             e.preventDefault(); // Block form submission
             return false;
         }
@@ -511,7 +511,7 @@
             grecaptcha.reset(); // Reset the Google reCAPTCHA widget
             var submitBtn = document.getElementById("submit-btn");
             submitBtn.disabled = false;
-            submitBtn.value = "Submit Ticket";
+            submitBtn.value = "Submit";
             alert("The verification has expired. Please check the reCAPTCHA box again before submitting.");
         }
     </script>
